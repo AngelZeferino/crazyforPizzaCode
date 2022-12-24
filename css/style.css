@@ -3,13 +3,28 @@
     box-sizing:border-box;
    
 }
+html{
+    height:100%;
+    box-sizing:border-box;
+}
 body{
+    position:relative;
+    box-sizing:inherit;
+    padding-bottom:6.74rem;
     margin:0;
     padding:0;
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
+
 }
 
 .home-text{
     text-align:center;
+    letter-spacing:1px;
+    word-spacing:-1px;
+    text-shadow:2px 2px black;
     position:absolute;
     top:50%;
     left:50%;
@@ -27,13 +42,14 @@ body{
     left:50%;
     padding:20px 50px;
     font-size:15px;
-    font-weight:bold;
+    font-weight:bolder;
     transition-duration:0.4s;
     cursor:pointer
 }
 .btnHome:hover{
     background-color:rgb(214, 26, 26);
     color:white;
+    font-weight:bolder;
 }
 
 
@@ -62,13 +78,14 @@ li,a{
     flex-direction: row-reverse;
     justify-content: space-between;
     padding:10px 10%;
-    background-color:black;
+    background-color:rgba(0,0,0,0.5);
     color:white;
+    opacity:0.9;
 }
 
 .cpName{
     font-size: 30px; 
-    margin:0 auto;
+    margin:auto;
     color:red;
     font-weight:bolder;
     position:absolute;
@@ -78,23 +95,24 @@ li,a{
 
 .navLinks li{
     display:inline-block;
+    margin:auto;
+   
 }
 .navLinks ul{
 list-style:none;
 background:none;
 padding:0;
-margin:0;
 }
 
 .navLinks a{
     transition: all 0.3s ease 0s;
     text-decoration:none;
     color:white;
-    width:100px;
+    width:130px;
     display:block;
     padding:25px 20px;
     font-size:15px;
-    text-align:right;
+    text-align:center;
     
 }
 .navLinks a:hover{
@@ -105,7 +123,57 @@ margin:0;
 .logoNav{
     position:fixed;
     height:auto;
-    left:10px;
+    right:0px;
     top:5px;
     width:40px;
+}
+.bottomHome{
+    background-color:white;
+}
+.footer{
+    margin-top:150px;
+    width:100%;
+    padding:25px 13%;
+    background: #333;
+    color:#efefef;
+    display:flex;
+    bottom:0px;
+    position:absolute;
+}
+.footer div{
+    text-align:center;
+}
+.column2{
+    flex-grow:2;
+}
+.footer div h3 {
+    font-weight:bold;
+    margin-bottom:30px;
+    letter-spacing:1px;
+
+}
+.column1 a{
+    display:block;
+    text-decoration:none;
+    color:#efefef;
+    margin-bottom:10px;
+}
+form input{
+    width:400px;
+    height:45px;
+    border-radius:4px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:40px;
+    outline:none;
+    border:none;
+}
+form button{
+    background:transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 30px;
+    font-size:15px;
+    cursor:pointer;
 }
