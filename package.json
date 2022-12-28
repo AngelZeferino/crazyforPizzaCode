@@ -1,0 +1,23 @@
+{
+  "name": "crazyforpizzacode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/input.css -o dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelZeferino/crazyforPizzaCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelZeferino/crazyforPizzaCode/issues"
+  },
+  "homepage": "https://github.com/AngelZeferino/crazyforPizzaCode#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
