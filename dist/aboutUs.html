@@ -1,10 +1,12 @@
 <html lang="en" class="m-0 p-0 h-full">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/jpg" href="../img/cpLogo.jpg">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/demo.css">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <!--<script src="menu.js"></script>-->
 </head>
@@ -12,26 +14,19 @@
 <body class="bg-black font-[Unbounded] h-full ">
     
     <!-- navigatio bar starts here-->
-    <nav class="bg-black fixed inset-x-0 top-0 left-0">
-        <div class ="max-w 7x1 mx-auto text-yellow-700">
-         <div class="flex justify-between">
-            <!-- left side of nav-->
-            <div class="flex items-center space-x-2 py-8">
-            <div class ="h-10 w-10">
-                <img src="../img/cpLogo.jpg" class ="logoNav">
-            </div>
-            <div class="text-red-600 text-2xl   ">
-                CRAZY FOR PIZZA RESTAURANT
-            </div>
-            </div>
-            <!-- right side of nav-->
-            <div class="hidden md:flex items-center space-x-2 px-10">
-                <a href="home.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">HomeOG</a>
-                <a href="home2.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Home</a>
-                <a href="menu1.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Menu1</a>
+    <div class="navbar bg-black text-white">
+        <div class="flex-1">
+            <a class="normal-case text-2xl text-red-600">Crazy for Pizza Restaurant</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <a href="casa.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Home</a>
+                <a href="menu.html"  class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Menu</a>
                 <a href="aboutUs.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">About us</a>
-                <a href="contact.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Contact</a>
-            </div>
+                <a href="contact.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Contact</a>                
+            </ul>
+        </div>
+    </div>
         <!-- mobile button here -->
         <div>
             <div class="block md:hidden flex items-center py-3 px-4 mx-2 ">
@@ -55,11 +50,6 @@
             </div>
         </div>
     <!-- navigation bar ends here-->
-    </nav>
-    <div>
-        <div class="mt-24">
-            <p> hello</p>
-        </div>
-    </div>
+ 
 </body>
 </html>

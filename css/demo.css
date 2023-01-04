@@ -406,6 +406,24 @@
     backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.btnHome{
+    background-color:red;
+    border:none;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:100%;
+    left:50%;
+    padding:20px 50px;
+    font-size:15px;
+    font-weight:bolder;
+    transition-duration:0.4s;
+    cursor:pointer
+}
+.btnHome:hover{
+    background-color:rgb(214, 26, 26);
+    color:white;
+    font-weight:bolder;
+}
 
 /* Foooter CSS */
 
@@ -444,7 +462,7 @@
 
 .footer-title {
     margin-bottom: 0.5rem/* 8px */;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     opacity: 0.5;
 }
@@ -460,4 +478,38 @@
 .gap-4 {
     gap: 1rem/* 16px */;
 }
+.footerTitle {
+    margin-bottom: 0.5rem/* 8px */;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
 
+.footerTitle2 {
+    margin-bottom: 0.5rem/* 8px */;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+form input{
+    width:400px;
+    height:45px;
+    border-radius:30px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:40px;
+    outline:none;
+    border:2px solid black;
+}
+form button{
+    background:gray;
+    border: 2px solid black;
+    color:black;
+    border-radius:30px;
+    padding:10px 30px;
+    font-size:15px;
+    cursor:pointer;
+}
+.column2{
+    flex-grow:2;
+}
