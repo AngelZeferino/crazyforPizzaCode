@@ -464,7 +464,6 @@
     margin-bottom: 0.5rem/* 8px */;
     font-weight: 800;
     text-transform: uppercase;
-    opacity: 0.5;
 }
 
 .grid {
@@ -482,14 +481,12 @@
     margin-bottom: 0.5rem/* 8px */;
     font-weight: 900;
     text-transform: uppercase;
-    opacity: 0.5;
 }
 
 .footerTitle2 {
     margin-bottom: 0.5rem/* 8px */;
     font-weight: 900;
     text-transform: uppercase;
-    opacity: 0.5;
 }
 form input{
     width:400px;
@@ -502,9 +499,9 @@ form input{
     border:2px solid black;
 }
 form button{
-    background:gray;
-    border: 2px solid black;
-    color:black;
+    background:white;
+    border: 2px solid white;
+    color:white;
     border-radius:30px;
     padding:10px 30px;
     font-size:15px;
