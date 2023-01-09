@@ -1,31 +1,24 @@
-const btn = document.querySelector('.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
-btn.addEventListener('click',() => {
-menu.classList.toggle("hidden");
-});
 
-const toTop =document.querySelector(".to-top");
 
-window.addEventListener("scroll",() =>{
-    if(window.pageYOffset >100){
-        toTop.classList.add("active");
-    }else{
-    toTop.classList.remove("active");
-    }
-})
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 40){
-            $('#topBtn').fadeIn();
-        } else{
-            $('#topBtn').fadeOut();
-        }
-    });
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
-    $("#topBtn").click(function(){
-        $('html ,body').animate({scrollTop : 0},800);
-    });
-});
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
