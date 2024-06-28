@@ -22,7 +22,39 @@ html{
 .flex-1 {
     flex: 1 1 0%;
 }
+@media screen and (max-width: 1012px) {
+    .textSize {
+      font-size:20px;
+      display:flex;
+    }
+  }
 
+@media screen and (max-width: 948px) {
+    .textSize {
+      font-size:17px;
+      display:flex;
+    }
+  }
+@media screen and (max-width: 900px) {
+    .textSize {
+      font-size:16px;
+      display:flex;
+    }
+  }
+ 
+
+@media screen and (max-width: 451px) {
+    .textSize {
+      font-size:16px;
+      display:flex;
+    }
+  }
+@media screen and (max-width: 320px) {
+    .textSize {
+      font-size:16px;
+      display:flex;
+    }
+  }
 .normal-case {
     text-transform: none;
 }
@@ -31,11 +63,14 @@ html{
     flex: none;
 }
 
+
 .menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
 }
+
 .menu.horizontal {
     display: inline-flex;
     flex-direction: row;
@@ -491,7 +526,7 @@ html{
     text-transform: uppercase;
 }
 form input{
-    width:400px;
+    width:320px;
     height:45px;
     border-radius:30px;
     text-align:center;
@@ -509,6 +544,42 @@ form button{
     font-size:15px;
     cursor:pointer;
 }
+@media screen and (max-width: 376px) {
+    form button {
+        background:white;
+        border: 2px solid white;
+        color:white;
+        border-radius:20px;
+        padding:10px 20px;
+        font-size:10px;
+        cursor:pointer;
+    }
+  }
+@media screen and (max-width: 376px) {
+    form input {
+        width:280px;
+        height:45px;
+        border-radius:30px;
+        text-align:center;
+        margin-top:20px;
+        margin-bottom:40px;
+        outline:none;
+        border:2px solid black;
+    }
+  }
+@media screen and (max-width: 320px) {
+    form input {
+        width:200px;
+        height:45px;
+        border-radius:30px;
+        text-align:center;
+        margin-top:20px;
+        margin-bottom:40px;
+        outline:none;
+        border:2px solid black;
+    }
+  }
+  
 .column2{
     flex-grow:2;
 }
@@ -561,3 +632,4 @@ form button{
   #myBtn:hover {
     background-color: #555;
   }
+  

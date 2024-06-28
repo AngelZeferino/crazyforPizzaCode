@@ -15,22 +15,22 @@
 <body class="bg-gradient-to-r from-red-600 via-red-500 to-pink-500 font-[Unbounded] h-full ">
     
     <!-- navigatio bar starts here-->
-    <div class="navbar hidden md:flex items-center space-x-1 bg-black text-white">
-        <div class="flex-1">
-            <a class="normal-case text-2xl text-red-600">Crazy for Pizza Restaurant</a>
+    <div class="navbar hidden md:flex items-center space-x-1 bg-black text-white lg: flex ">
+        <div class=" flex-1">
+            <a class=" textSize normal-case text-2xl text-red-600">Crazy for Pizza Restaurant</a>
         </div>
-        <div class="hidden md:flex-none">
-            <ul class="menu menu-horizontal px-1">
-                <a href="casa.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Home</a>
-                <a href="menu.html"  class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Menu</a>
-                <a href="aboutUs.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">About us</a>
-                <a href="contact.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300">Contact</a>                
+        <div class=" hidden md:flex items-center space-x-1 lg:flex items-center space-x-1">
+            <ul class="menu menu-horizontal px-1 items-center">
+                <a href="casa.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300 lg:py-5 px-6 hover:bg-red-600 text-white rounded transition duration-300 ">Home</a>
+                <a href="menu.html"  class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300 lg:py-5 px-6 hover:bg-red-600 text-white rounded transition duration-300 ">Menu</a>
+                <a href="aboutUs.html" class="py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300 lg:py-5 px-6 hover:bg-red-600 text-white rounded transition duration-300 ">About us</a>
+                <a href="contact.html" class=" py-6 px-10 hover:bg-red-600 text-white rounded transition duration-300 lg:py-5 px-6 hover:bg-red-600 text-white rounded transition duration-300">Contact</a>                
             </ul>
         </div>
         <div>
-            <div class="block md:hidden flex items-center py-3 px-4 mx-2 ">
+            <div class="block md:hidden flex items-center py-3 pr-0 mr-0 mx-2 ">
                 <button class="mobile-menu-button"> 
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>
                 </button>
@@ -40,7 +40,7 @@
 
          </div>
          <!--mobile menu goes here-->
-            <div class="mobile-menu hidden md:hidden bg-black flex flex-col space-y-4 items-center">
+            <div class="mobile-menu hidden md:hidden bg-black flex flex-col space-y-4 items-center text-base">
                 <div >
                     <a href="casa.html" class=" block-py-3 px-4 hover:bg-red-600 text-white rounded transition duration-300">Home</a>
                 </div>
@@ -66,37 +66,53 @@
                 menu.classList.toggle("hidden");
             })
         </script>
-       
-    <section class="my-12 max-w-screen-xl mx-auto px-6"> 
-    <div class="flex flex-col items-center justify-center mt-14 "> 
-        <div class="text-3xl w-full text-center ">
-            <img class="w-96 h-64 mx-auto transform transition duration-300 hover:scale-105" src="../img/aboutUsImage2.JPG" alt>
-        </div>
-        <div> 
-            to serve 
-        </div>
-        
     </div>
-</section>
+    <section class="my-12 max-w-screen-xl mx-auto px-6"> 
+    <div class ="m-1 p-2 grid grid-cols-2 bg-inherit 
+                      gap-2 auto-rows-auto ">
+            <div class = "p-4 bg-white w-fit ">
+                <img class="mx-auto transform transition duration-300 hover:scale-105" src="../img/aboutUsImage2.JPG" alt>
 
+            </div> 
+            
+            <div class = "p-4 bg-white text-sm  w-fit">
+            <h1 class="text-center ">
+                ~Our promise~
+            </h1>
+            <p class="text-center leading-loose">
+                
+            We are committed to offering fresh and good quality products. Our chef and owner, Ramiro Elias hopes to make Crazy for Pizza Restaurant your next favorite place to eat. His experience in foods such as tacos, pasta, and pizza has given him a wonderful reputation for providing good and tasty food!
+            </p>
+            </div> 
+        
   
+        </div> 
+       
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa-solid fa-square-caret-up"></i>
+        </button>
         
 
     <!-- navigation bar ends here-->
     <footer class="footer p-10 bg-black text-neutral-content">
-        <div class="w-16 h-16 fill-current">
+        <div class="w-12 h-12 fill-current ">
             <img src="../img/cpLogo.jpg" class ="logoNav">
+                             
         </div>
         <div>
              <span class="footerTitle2 text-red-600"> Contact</span>
            <p class="leading-relaxed text-white">1220 US-45 unit C500 <br> Vernon Hills, IL 60061 </p>
             <p class="text-white"> crazyforpizza23@gmail.com</p>
-           <p class="text-white"> 847-383-5382</p>
+           <p class="text-white"> 847-383-5382 <br></p>
+           <p class="text-white text-xs my-4"> Crazy for Pizza Restaurant &copy; 2023 All Rights Reserved</p>
+
         </div>
         <div>
             <span class="footerTitle text-red-600 ">Newsletter</span>
             <div class="grid grid-flow-col gap-4  ">
-                <div class = "column2 ">
+                <div class = "column2  ">
                     <form >
                         <input type ="email" placeholder="Your email address" required>
                         <br>
@@ -108,15 +124,18 @@
         </div>
         <div>
             <span class="footer-title text-red-600 " >Social</span>
-            <div class="grid grid-flow-col gap-4 bg-white w-24 h-10">
+            <div class="grid grid-flow-col gap-4 bg-white w-20 h-10">
                 <div class="my-1.5 mx-1.5 grid grid-flow-col gap-4 ">
                 <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
                            
                 <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
+
             </div>
             </div>
         </div>
     </footer>
-   
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-square-caret-up"></i>
+    </button>
 </body>
 </html>
